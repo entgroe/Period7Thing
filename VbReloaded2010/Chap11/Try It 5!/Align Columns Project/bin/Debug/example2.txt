@@ -1,3 +1,0 @@
-Name           City
-Janice         Paris
-Sue            Rome
