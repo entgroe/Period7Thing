@@ -1,0 +1,4 @@
+C:\Users\sjbar533\source\repos\Period7Thing\paint program\paint program\obj\Debug\paint program.vbprojAssemblyReference.cache
+C:\Users\sjbar533\source\repos\Period7Thing\paint program\paint program\obj\Debug\paint_program.Form1.resources
+C:\Users\sjbar533\source\repos\Period7Thing\paint program\paint program\obj\Debug\paint_program.Resources.resources
+C:\Users\sjbar533\source\repos\Period7Thing\paint program\paint program\obj\Debug\paint program.vbproj.GenerateResource.cache
