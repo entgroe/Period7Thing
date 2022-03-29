@@ -33,6 +33,8 @@ Partial Class Form1
         Me.TrackBar1 = New System.Windows.Forms.TrackBar()
         Me.TrackBar2 = New System.Windows.Forms.TrackBar()
         Me.TrackBar3 = New System.Windows.Forms.TrackBar()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TrackBar2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -77,10 +79,11 @@ Partial Class Form1
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(688, 356)
+        Me.Button1.Location = New System.Drawing.Point(684, 275)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(26, 25)
+        Me.Button1.Size = New System.Drawing.Size(43, 45)
         Me.Button1.TabIndex = 8
+        Me.Button1.Text = "Line"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'PictureBox1
@@ -112,11 +115,31 @@ Partial Class Form1
         Me.TrackBar3.Size = New System.Drawing.Size(104, 45)
         Me.TrackBar3.TabIndex = 16
         '
+        'Button5
+        '
+        Me.Button5.Location = New System.Drawing.Point(733, 275)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(43, 45)
+        Me.Button5.TabIndex = 17
+        Me.Button5.Text = "Rect."
+        Me.Button5.UseVisualStyleBackColor = True
+        '
+        'Button6
+        '
+        Me.Button6.Location = New System.Drawing.Point(684, 326)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(43, 44)
+        Me.Button6.TabIndex = 18
+        Me.Button6.Text = "Poly."
+        Me.Button6.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(816, 445)
+        Me.Controls.Add(Me.Button6)
+        Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.TrackBar3)
         Me.Controls.Add(Me.TrackBar2)
         Me.Controls.Add(Me.TrackBar1)
@@ -148,4 +171,6 @@ Partial Class Form1
     Friend WithEvents TrackBar1 As TrackBar
     Friend WithEvents TrackBar2 As TrackBar
     Friend WithEvents TrackBar3 As TrackBar
+    Friend WithEvents Button5 As Button
+    Friend WithEvents Button6 As Button
 End Class

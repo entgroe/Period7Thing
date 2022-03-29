@@ -3,6 +3,7 @@
     Dim m_shapes As New Collection
     Dim c As Color
     Dim w As Integer
+    Dim type As String
 
 
     Private Sub pictureBox1_MouseDown(sender As Object, e As MouseEventArgs) Handles PictureBox1.MouseDown
@@ -12,11 +13,28 @@
 
     Private Sub pictureBox1_MouseMove(sender As Object, e As MouseEventArgs) Handles PictureBox1.MouseMove
         If m_Previous IsNot Nothing Then
-            Dim l As New Circle(PictureBox1.Image, m_Previous, e.Location)
-            l.Pen = New Pen(c, w)
-            l.w = TrackBar2.Value
-            l.h = TrackBar3.Value
-            m_shapes.Add(l)
+            Dim d As Object
+
+            If type = "Line" Then
+                d = New Line(PictureBox1.Image, m_Previous, e.Location)
+                d.Pen = New Pen(c, w)
+            End If
+            If type = "Rectangle" Then
+                d = New Rect(PictureBox1.Image, m_Previous, e.Location)
+                d.Pen = New Pen(c, w)
+                ' d.w = TrackBar2.Value
+                ' d.w = TrackBar3.Value
+            End If
+            If type = "polygon" Then
+                d = New polygon(PictureBox1.Image, m_Previous, e.Location)
+                d.Pen = New Pen(c, w)
+                ' d.w = TrackBar2.Value
+                ' d.w = TrackBar3.Value
+            End If
+
+
+
+            m_shapes.Add(d)
             PictureBox1.Invalidate()
             m_Previous = e.Location
         End If
@@ -62,7 +80,14 @@
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
-        SaveFileDialog1.ShowDialog()
-        PictureBox1.Image.Save(SaveFileDialog1.FileName)
+        type = "Line"
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        type = "rectangle"
+    End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        type = "polygon"
     End Sub
 End Class
