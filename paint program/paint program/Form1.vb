@@ -19,18 +19,24 @@
                 d = New Line(PictureBox1.Image, m_Previous, e.Location)
                 d.Pen = New Pen(c, w)
             End If
+
+
             If type = "Rectangle" Then
                 d = New Rect(PictureBox1.Image, m_Previous, e.Location)
                 d.Pen = New Pen(c, w)
-                ' d.w = TrackBar2.Value
-                ' d.w = TrackBar3.Value
+                d.w = TrackBar1.Value
+                d.w = TrackBar2.Value
             End If
+
+
             If type = "polygon" Then
                 d = New polygon(PictureBox1.Image, m_Previous, e.Location)
                 d.Pen = New Pen(c, w)
-                ' d.w = TrackBar2.Value
-                ' d.w = TrackBar3.Value
+                d.w = TrackBar1.Value
+                d.w = TrackBar2.Value
             End If
+
+
             If type = "ngon" Then
                 d = New ngon(PictureBox1.Image, m_Previous, e.Location)
                 d.Pen = New Pen(c, w)
@@ -39,10 +45,20 @@
             End If
 
 
+            If type = "picture" Then
+                d = New PBox(PictureBox1.Image, m_Previous, e.Location)
+                d.picture = PictureBox2.Image
+                d.w = TrackBar6.Value
+                d.h = TrackBar6.Value
+            End If
+
+
             m_shapes.Add(d)
             PictureBox1.Invalidate()
             m_Previous = e.Location
         End If
+
+
     End Sub
 
     Private Sub pictureBox1_MouseUp(sender As Object, e As MouseEventArgs) Handles PictureBox1.MouseUp
@@ -98,5 +114,13 @@
 
     Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
         type = "ngon"
+    End Sub
+
+    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
+        type = "Picture"
+    End Sub
+
+    Private Sub OpenFileDialog1_FileOk(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles OpenFileDialog1.FileOk
+        PictureBox2.Load(OpenFileDialog1.FileName)
     End Sub
 End Class

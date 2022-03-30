@@ -40,12 +40,20 @@ Partial Class Form1
         Me.TrackBar5 = New System.Windows.Forms.TrackBar()
         Me.Sides = New System.Windows.Forms.Label()
         Me.Radius = New System.Windows.Forms.Label()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.TrackBar6 = New System.Windows.Forms.TrackBar()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Button7 = New System.Windows.Forms.Button()
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+        Me.Label3 = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TrackBar2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TrackBar3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TrackBar4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TrackBar5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TrackBar6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button4
@@ -187,11 +195,64 @@ Partial Class Form1
         Me.Radius.TabIndex = 24
         Me.Radius.Text = "Radius"
         '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = Global.paint_program.My.Resources.Resources.hqdefault
+        Me.PictureBox2.Location = New System.Drawing.Point(684, 274)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(116, 102)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 25
+        Me.PictureBox2.TabStop = False
+        '
+        'TrackBar6
+        '
+        Me.TrackBar6.Location = New System.Drawing.Point(619, 483)
+        Me.TrackBar6.Name = "TrackBar6"
+        Me.TrackBar6.Size = New System.Drawing.Size(104, 45)
+        Me.TrackBar6.TabIndex = 26
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(685, 90)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(41, 13)
+        Me.Label2.TabIndex = 27
+        Me.Label2.Text = "Height:"
+        '
+        'Button7
+        '
+        Me.Button7.Location = New System.Drawing.Point(690, 382)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(98, 23)
+        Me.Button7.TabIndex = 28
+        Me.Button7.Text = "CustomBrush"
+        Me.Button7.UseVisualStyleBackColor = True
+        '
+        'OpenFileDialog1
+        '
+        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(619, 464)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(95, 13)
+        Me.Label3.TabIndex = 29
+        Me.Label3.Text = "Custom Brush Size"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(816, 554)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Button7)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.TrackBar6)
+        Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.Radius)
         Me.Controls.Add(Me.Sides)
         Me.Controls.Add(Me.TrackBar5)
@@ -216,6 +277,8 @@ Partial Class Form1
         CType(Me.TrackBar3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TrackBar4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TrackBar5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TrackBar6, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -239,4 +302,10 @@ Partial Class Form1
     Friend WithEvents TrackBar5 As TrackBar
     Friend WithEvents Sides As Label
     Friend WithEvents Radius As Label
+    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents TrackBar6 As TrackBar
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Button7 As Button
+    Friend WithEvents OpenFileDialog1 As OpenFileDialog
+    Friend WithEvents Label3 As Label
 End Class
