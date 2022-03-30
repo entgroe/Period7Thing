@@ -31,7 +31,12 @@
                 ' d.w = TrackBar2.Value
                 ' d.w = TrackBar3.Value
             End If
-
+            If type = "ngon" Then
+                d = New ngon(PictureBox1.Image, m_Previous, e.Location)
+                d.Pen = New Pen(c, w)
+                d.radius = TrackBar5.Value
+                d.sides = TrackBar4.Value
+            End If
 
 
             m_shapes.Add(d)
@@ -89,5 +94,9 @@
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
         type = "polygon"
+    End Sub
+
+    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+        type = "ngon"
     End Sub
 End Class
