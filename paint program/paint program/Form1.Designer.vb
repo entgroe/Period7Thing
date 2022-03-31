@@ -208,9 +208,12 @@ Partial Class Form1
         'TrackBar6
         '
         Me.TrackBar6.Location = New System.Drawing.Point(619, 483)
+        Me.TrackBar6.Maximum = 70
+        Me.TrackBar6.Minimum = 20
         Me.TrackBar6.Name = "TrackBar6"
         Me.TrackBar6.Size = New System.Drawing.Size(104, 45)
         Me.TrackBar6.TabIndex = 26
+        Me.TrackBar6.Value = 20
         '
         'Label2
         '

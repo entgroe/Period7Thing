@@ -123,4 +123,8 @@
     Private Sub OpenFileDialog1_FileOk(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles OpenFileDialog1.FileOk
         PictureBox2.Load(OpenFileDialog1.FileName)
     End Sub
+
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        type = "picture"
+    End Sub
 End Class

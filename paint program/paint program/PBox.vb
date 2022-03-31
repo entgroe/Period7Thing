@@ -6,7 +6,7 @@
     Public Property w As Integer
     Public Property h As Integer
     Public Sub New(i As Image, a As Point, b As Point)
-        Pen = Pens.Red
+
         m_image = i
         m_a = a
         m_b = b

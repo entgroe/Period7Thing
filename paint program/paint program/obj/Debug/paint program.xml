@@ -22,5 +22,10 @@ paint program
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="P:paint_program.My.Resources.Resources.hqdefault">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 </members>
 </doc>
