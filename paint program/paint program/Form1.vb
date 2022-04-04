@@ -1,4 +1,4 @@
-﻿Public Class Form1
+﻿Public Class ySpeedTrackbar
     Private m_Previous As System.Nullable(Of Point) = Nothing
     Dim m_shapes As New Collection
     Dim c As Color
@@ -15,9 +15,15 @@
         If m_Previous IsNot Nothing Then
             Dim d As Object
 
+            d = New Line(PictureBox1.Image, m_Previous, e.Location)
+            d.Pen = New Pen(c, w)
+            d.xspeed = xSpeedTrackBar.Value
+            d.yspeed = ySpeedTrackbar.Value
             If type = "Line" Then
                 d = New Line(PictureBox1.Image, m_Previous, e.Location)
                 d.Pen = New Pen(c, w)
+                d.xspeed = xSpeedTrackBar.Value
+                d.yspeed = ySpeedTrackbar.value
             End If
 
 
@@ -79,6 +85,9 @@
         For Each s As Object In m_shapes
             s.Draw()
         Next
+        If (CheckBox1.Checked) Then
+            Refresh()
+        End If
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -126,5 +135,9 @@
 
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
         type = "picture"
+    End Sub
+
+    Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
+
     End Sub
 End Class

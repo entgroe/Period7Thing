@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Form1
+Partial Class ySpeedTrackbar
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -46,6 +46,11 @@ Partial Class Form1
         Me.Button7 = New System.Windows.Forms.Button()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.TrackBar7 = New System.Windows.Forms.TrackBar()
+        Me.xSpeedTrackBar = New System.Windows.Forms.TrackBar()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.Label5 = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TrackBar2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -54,11 +59,13 @@ Partial Class Form1
         CType(Me.TrackBar5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TrackBar6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TrackBar7, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.xSpeedTrackBar, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(123, 524)
+        Me.Button4.Location = New System.Drawing.Point(921, 527)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(75, 23)
         Me.Button4.TabIndex = 13
@@ -159,7 +166,7 @@ Partial Class Form1
         '
         'TrackBar4
         '
-        Me.TrackBar4.Location = New System.Drawing.Point(321, 483)
+        Me.TrackBar4.Location = New System.Drawing.Point(828, 58)
         Me.TrackBar4.Maximum = 20
         Me.TrackBar4.Minimum = 3
         Me.TrackBar4.Name = "TrackBar4"
@@ -169,7 +176,7 @@ Partial Class Form1
         '
         'TrackBar5
         '
-        Me.TrackBar5.Location = New System.Drawing.Point(467, 483)
+        Me.TrackBar5.Location = New System.Drawing.Point(828, 109)
         Me.TrackBar5.Maximum = 200
         Me.TrackBar5.Minimum = 10
         Me.TrackBar5.Name = "TrackBar5"
@@ -180,7 +187,7 @@ Partial Class Form1
         'Sides
         '
         Me.Sides.AutoSize = True
-        Me.Sides.Location = New System.Drawing.Point(318, 467)
+        Me.Sides.Location = New System.Drawing.Point(825, 42)
         Me.Sides.Name = "Sides"
         Me.Sides.Size = New System.Drawing.Size(33, 13)
         Me.Sides.TabIndex = 23
@@ -189,7 +196,7 @@ Partial Class Form1
         'Radius
         '
         Me.Radius.AutoSize = True
-        Me.Radius.Location = New System.Drawing.Point(467, 464)
+        Me.Radius.Location = New System.Drawing.Point(828, 90)
         Me.Radius.Name = "Radius"
         Me.Radius.Size = New System.Drawing.Size(40, 13)
         Me.Radius.TabIndex = 24
@@ -198,16 +205,16 @@ Partial Class Form1
         'PictureBox2
         '
         Me.PictureBox2.Image = Global.paint_program.My.Resources.Resources.hqdefault
-        Me.PictureBox2.Location = New System.Drawing.Point(684, 274)
+        Me.PictureBox2.Location = New System.Drawing.Point(127, 451)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(116, 102)
+        Me.PictureBox2.Size = New System.Drawing.Size(105, 69)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox2.TabIndex = 25
         Me.PictureBox2.TabStop = False
         '
         'TrackBar6
         '
-        Me.TrackBar6.Location = New System.Drawing.Point(619, 483)
+        Me.TrackBar6.Location = New System.Drawing.Point(828, 173)
         Me.TrackBar6.Maximum = 70
         Me.TrackBar6.Minimum = 20
         Me.TrackBar6.Name = "TrackBar6"
@@ -226,9 +233,9 @@ Partial Class Form1
         '
         'Button7
         '
-        Me.Button7.Location = New System.Drawing.Point(690, 382)
+        Me.Button7.Location = New System.Drawing.Point(133, 528)
         Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(98, 23)
+        Me.Button7.Size = New System.Drawing.Size(87, 21)
         Me.Button7.TabIndex = 28
         Me.Button7.Text = "CustomBrush"
         Me.Button7.UseVisualStyleBackColor = True
@@ -240,17 +247,65 @@ Partial Class Form1
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(619, 464)
+        Me.Label3.Location = New System.Drawing.Point(828, 154)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(95, 13)
         Me.Label3.TabIndex = 29
         Me.Label3.Text = "Custom Brush Size"
         '
-        'Form1
+        'TrackBar7
+        '
+        Me.TrackBar7.Location = New System.Drawing.Point(828, 298)
+        Me.TrackBar7.Name = "TrackBar7"
+        Me.TrackBar7.Size = New System.Drawing.Size(104, 45)
+        Me.TrackBar7.TabIndex = 30
+        '
+        'xSpeedTrackBar
+        '
+        Me.xSpeedTrackBar.Location = New System.Drawing.Point(828, 237)
+        Me.xSpeedTrackBar.Minimum = -10
+        Me.xSpeedTrackBar.Name = "xSpeedTrackBar"
+        Me.xSpeedTrackBar.Size = New System.Drawing.Size(104, 45)
+        Me.xSpeedTrackBar.TabIndex = 31
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(837, 218)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(54, 13)
+        Me.Label4.TabIndex = 32
+        Me.Label4.Text = "Speed - X"
+        '
+        'CheckBox1
+        '
+        Me.CheckBox1.AutoSize = True
+        Me.CheckBox1.Location = New System.Drawing.Point(690, 201)
+        Me.CheckBox1.Name = "CheckBox1"
+        Me.CheckBox1.Size = New System.Drawing.Size(85, 17)
+        Me.CheckBox1.TabIndex = 33
+        Me.CheckBox1.Text = "AutoRefresh"
+        Me.CheckBox1.UseVisualStyleBackColor = True
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(837, 282)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(54, 13)
+        Me.Label5.TabIndex = 34
+        Me.Label5.Text = "Speed - Y"
+        '
+        'ySpeedTrackbar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(816, 554)
+        Me.ClientSize = New System.Drawing.Size(999, 554)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.CheckBox1)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.xSpeedTrackBar)
+        Me.Controls.Add(Me.TrackBar7)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.Label2)
@@ -272,7 +327,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Name = "Form1"
+        Me.Name = "ySpeedTrackbar"
         Me.Text = "Form1"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -282,6 +337,8 @@ Partial Class Form1
         CType(Me.TrackBar5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TrackBar6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TrackBar7, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.xSpeedTrackBar, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -311,4 +368,9 @@ Partial Class Form1
     Friend WithEvents Button7 As Button
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
     Friend WithEvents Label3 As Label
+    Friend WithEvents TrackBar7 As TrackBar
+    Friend WithEvents xSpeedTrackBar As TrackBar
+    Friend WithEvents Label4 As Label
+    Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents Label5 As Label
 End Class
