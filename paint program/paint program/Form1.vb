@@ -18,20 +18,25 @@
             d = New Line(PictureBox1.Image, m_Previous, e.Location)
             d.Pen = New Pen(c, w)
             d.xspeed = xSpeedTrackBar.Value
-            d.yspeed = ySpeedTrackbar.Value
+            ' d.yspeed = ySpeedTrackbar.Value
             If type = "Line" Then
                 d = New Line(PictureBox1.Image, m_Previous, e.Location)
                 d.Pen = New Pen(c, w)
                 d.xspeed = xSpeedTrackBar.Value
-                d.yspeed = ySpeedTrackbar.value
+                'd.yspeed = ySpeedTrackbar.value
             End If
 
 
             If type = "Rectangle" Then
                 d = New Rect(PictureBox1.Image, m_Previous, e.Location)
+                d.fill = CheckBox2.Checked
+                d.color1 = Button2.BackColor
+                d.color2 = Button3.BackColor
+
                 d.Pen = New Pen(c, w)
                 d.w = TrackBar1.Value
                 d.w = TrackBar2.Value
+
             End If
 
 
@@ -98,7 +103,12 @@
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        ColorDialog1.ShowDialog()
+        c = ColorDialog1.Color
         c = sender.backcolor
+
+
+
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click

@@ -51,6 +51,7 @@ Partial Class ySpeedTrackbar
         Me.Label4 = New System.Windows.Forms.Label()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TrackBar2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -296,11 +297,22 @@ Partial Class ySpeedTrackbar
         Me.Label5.TabIndex = 34
         Me.Label5.Text = "Speed - Y"
         '
+        'CheckBox2
+        '
+        Me.CheckBox2.AutoSize = True
+        Me.CheckBox2.Location = New System.Drawing.Point(690, 224)
+        Me.CheckBox2.Name = "CheckBox2"
+        Me.CheckBox2.Size = New System.Drawing.Size(38, 17)
+        Me.CheckBox2.TabIndex = 35
+        Me.CheckBox2.Text = "Fill"
+        Me.CheckBox2.UseVisualStyleBackColor = True
+        '
         'ySpeedTrackbar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(999, 554)
+        Me.Controls.Add(Me.CheckBox2)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.CheckBox1)
         Me.Controls.Add(Me.Label4)
@@ -373,4 +385,5 @@ Partial Class ySpeedTrackbar
     Friend WithEvents Label4 As Label
     Friend WithEvents CheckBox1 As CheckBox
     Friend WithEvents Label5 As Label
+    Friend WithEvents CheckBox2 As CheckBox
 End Class
