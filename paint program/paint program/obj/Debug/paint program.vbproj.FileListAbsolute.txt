@@ -9,3 +9,4 @@ C:\Users\sjbar533\source\repos\Period7Thing\paint program\paint program\bin\Debu
 C:\Users\sjbar533\source\repos\Period7Thing\paint program\paint program\obj\Debug\paint program.exe
 C:\Users\sjbar533\source\repos\Period7Thing\paint program\paint program\obj\Debug\paint program.xml
 C:\Users\sjbar533\source\repos\Period7Thing\paint program\paint program\obj\Debug\paint program.pdb
+C:\Users\sjbar533\source\repos\Period7Thing\paint program\paint program\obj\Debug\paint_program.ySpeedTrackbar.resources
