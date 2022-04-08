@@ -52,6 +52,16 @@ Partial Class ySpeedTrackbar
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.CheckBox2 = New System.Windows.Forms.CheckBox()
+        Me.Button9 = New System.Windows.Forms.Button()
+        Me.Button10 = New System.Windows.Forms.Button()
+        Me.Button11 = New System.Windows.Forms.Button()
+        Me.Button12 = New System.Windows.Forms.Button()
+        Me.Button13 = New System.Windows.Forms.Button()
+        Me.Button14 = New System.Windows.Forms.Button()
+        Me.Button15 = New System.Windows.Forms.Button()
+        Me.Button16 = New System.Windows.Forms.Button()
+        Me.Button17 = New System.Windows.Forms.Button()
+        Me.Button18 = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TrackBar2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -76,7 +86,7 @@ Partial Class ySpeedTrackbar
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(685, 42)
+        Me.Label1.Location = New System.Drawing.Point(694, 5)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(38, 13)
         Me.Label1.TabIndex = 12
@@ -85,7 +95,7 @@ Partial Class ySpeedTrackbar
         'Button3
         '
         Me.Button3.BackColor = System.Drawing.Color.DarkRed
-        Me.Button3.Location = New System.Drawing.Point(716, 12)
+        Me.Button3.Location = New System.Drawing.Point(958, 13)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(26, 25)
         Me.Button3.TabIndex = 11
@@ -93,8 +103,8 @@ Partial Class ySpeedTrackbar
         '
         'Button2
         '
-        Me.Button2.BackColor = System.Drawing.Color.LawnGreen
-        Me.Button2.Location = New System.Drawing.Point(684, 13)
+        Me.Button2.BackColor = System.Drawing.Color.LightSeaGreen
+        Me.Button2.Location = New System.Drawing.Point(926, 13)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(26, 25)
         Me.Button2.TabIndex = 10
@@ -119,21 +129,21 @@ Partial Class ySpeedTrackbar
         '
         'TrackBar1
         '
-        Me.TrackBar1.Location = New System.Drawing.Point(684, 58)
+        Me.TrackBar1.Location = New System.Drawing.Point(693, 21)
         Me.TrackBar1.Name = "TrackBar1"
         Me.TrackBar1.Size = New System.Drawing.Size(104, 45)
         Me.TrackBar1.TabIndex = 14
         '
         'TrackBar2
         '
-        Me.TrackBar2.Location = New System.Drawing.Point(684, 109)
+        Me.TrackBar2.Location = New System.Drawing.Point(693, 72)
         Me.TrackBar2.Name = "TrackBar2"
         Me.TrackBar2.Size = New System.Drawing.Size(104, 45)
         Me.TrackBar2.TabIndex = 15
         '
         'TrackBar3
         '
-        Me.TrackBar3.Location = New System.Drawing.Point(684, 160)
+        Me.TrackBar3.Location = New System.Drawing.Point(693, 123)
         Me.TrackBar3.Name = "TrackBar3"
         Me.TrackBar3.Size = New System.Drawing.Size(104, 45)
         Me.TrackBar3.TabIndex = 16
@@ -167,7 +177,7 @@ Partial Class ySpeedTrackbar
         '
         'TrackBar4
         '
-        Me.TrackBar4.Location = New System.Drawing.Point(828, 58)
+        Me.TrackBar4.Location = New System.Drawing.Point(697, 182)
         Me.TrackBar4.Maximum = 20
         Me.TrackBar4.Minimum = 3
         Me.TrackBar4.Name = "TrackBar4"
@@ -177,7 +187,7 @@ Partial Class ySpeedTrackbar
         '
         'TrackBar5
         '
-        Me.TrackBar5.Location = New System.Drawing.Point(828, 109)
+        Me.TrackBar5.Location = New System.Drawing.Point(697, 233)
         Me.TrackBar5.Maximum = 200
         Me.TrackBar5.Minimum = 10
         Me.TrackBar5.Name = "TrackBar5"
@@ -188,7 +198,7 @@ Partial Class ySpeedTrackbar
         'Sides
         '
         Me.Sides.AutoSize = True
-        Me.Sides.Location = New System.Drawing.Point(825, 42)
+        Me.Sides.Location = New System.Drawing.Point(694, 166)
         Me.Sides.Name = "Sides"
         Me.Sides.Size = New System.Drawing.Size(33, 13)
         Me.Sides.TabIndex = 23
@@ -197,7 +207,7 @@ Partial Class ySpeedTrackbar
         'Radius
         '
         Me.Radius.AutoSize = True
-        Me.Radius.Location = New System.Drawing.Point(828, 90)
+        Me.Radius.Location = New System.Drawing.Point(697, 214)
         Me.Radius.Name = "Radius"
         Me.Radius.Size = New System.Drawing.Size(40, 13)
         Me.Radius.TabIndex = 24
@@ -206,7 +216,7 @@ Partial Class ySpeedTrackbar
         'PictureBox2
         '
         Me.PictureBox2.Image = Global.paint_program.My.Resources.Resources.hqdefault
-        Me.PictureBox2.Location = New System.Drawing.Point(127, 451)
+        Me.PictureBox2.Location = New System.Drawing.Point(862, 99)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(105, 69)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -215,7 +225,7 @@ Partial Class ySpeedTrackbar
         '
         'TrackBar6
         '
-        Me.TrackBar6.Location = New System.Drawing.Point(828, 173)
+        Me.TrackBar6.Location = New System.Drawing.Point(697, 297)
         Me.TrackBar6.Maximum = 70
         Me.TrackBar6.Minimum = 20
         Me.TrackBar6.Name = "TrackBar6"
@@ -226,7 +236,7 @@ Partial Class ySpeedTrackbar
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(685, 90)
+        Me.Label2.Location = New System.Drawing.Point(694, 53)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(41, 13)
         Me.Label2.TabIndex = 27
@@ -234,7 +244,7 @@ Partial Class ySpeedTrackbar
         '
         'Button7
         '
-        Me.Button7.Location = New System.Drawing.Point(133, 528)
+        Me.Button7.Location = New System.Drawing.Point(862, 173)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(87, 21)
         Me.Button7.TabIndex = 28
@@ -248,7 +258,7 @@ Partial Class ySpeedTrackbar
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(828, 154)
+        Me.Label3.Location = New System.Drawing.Point(697, 278)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(95, 13)
         Me.Label3.TabIndex = 29
@@ -256,14 +266,14 @@ Partial Class ySpeedTrackbar
         '
         'TrackBar7
         '
-        Me.TrackBar7.Location = New System.Drawing.Point(828, 298)
+        Me.TrackBar7.Location = New System.Drawing.Point(697, 422)
         Me.TrackBar7.Name = "TrackBar7"
         Me.TrackBar7.Size = New System.Drawing.Size(104, 45)
         Me.TrackBar7.TabIndex = 30
         '
         'xSpeedTrackBar
         '
-        Me.xSpeedTrackBar.Location = New System.Drawing.Point(828, 237)
+        Me.xSpeedTrackBar.Location = New System.Drawing.Point(697, 361)
         Me.xSpeedTrackBar.Minimum = -10
         Me.xSpeedTrackBar.Name = "xSpeedTrackBar"
         Me.xSpeedTrackBar.Size = New System.Drawing.Size(104, 45)
@@ -272,7 +282,7 @@ Partial Class ySpeedTrackbar
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(837, 218)
+        Me.Label4.Location = New System.Drawing.Point(697, 345)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(54, 13)
         Me.Label4.TabIndex = 32
@@ -281,7 +291,7 @@ Partial Class ySpeedTrackbar
         'CheckBox1
         '
         Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(690, 201)
+        Me.CheckBox1.Location = New System.Drawing.Point(911, 504)
         Me.CheckBox1.Name = "CheckBox1"
         Me.CheckBox1.Size = New System.Drawing.Size(85, 17)
         Me.CheckBox1.TabIndex = 33
@@ -291,7 +301,7 @@ Partial Class ySpeedTrackbar
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(837, 282)
+        Me.Label5.Location = New System.Drawing.Point(697, 406)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(54, 13)
         Me.Label5.TabIndex = 34
@@ -300,18 +310,118 @@ Partial Class ySpeedTrackbar
         'CheckBox2
         '
         Me.CheckBox2.AutoSize = True
-        Me.CheckBox2.Location = New System.Drawing.Point(690, 224)
+        Me.CheckBox2.Location = New System.Drawing.Point(958, 481)
         Me.CheckBox2.Name = "CheckBox2"
         Me.CheckBox2.Size = New System.Drawing.Size(38, 17)
         Me.CheckBox2.TabIndex = 35
         Me.CheckBox2.Text = "Fill"
         Me.CheckBox2.UseVisualStyleBackColor = True
         '
+        'Button9
+        '
+        Me.Button9.BackColor = System.Drawing.Color.LightPink
+        Me.Button9.Location = New System.Drawing.Point(894, 13)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(26, 25)
+        Me.Button9.TabIndex = 36
+        Me.Button9.UseVisualStyleBackColor = False
+        '
+        'Button10
+        '
+        Me.Button10.BackColor = System.Drawing.Color.LightCoral
+        Me.Button10.Location = New System.Drawing.Point(862, 13)
+        Me.Button10.Name = "Button10"
+        Me.Button10.Size = New System.Drawing.Size(26, 25)
+        Me.Button10.TabIndex = 37
+        Me.Button10.UseVisualStyleBackColor = False
+        '
+        'Button11
+        '
+        Me.Button11.BackColor = System.Drawing.Color.LawnGreen
+        Me.Button11.Location = New System.Drawing.Point(958, 47)
+        Me.Button11.Name = "Button11"
+        Me.Button11.Size = New System.Drawing.Size(26, 25)
+        Me.Button11.TabIndex = 38
+        Me.Button11.UseVisualStyleBackColor = False
+        '
+        'Button12
+        '
+        Me.Button12.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Button12.Location = New System.Drawing.Point(926, 47)
+        Me.Button12.Name = "Button12"
+        Me.Button12.Size = New System.Drawing.Size(26, 25)
+        Me.Button12.TabIndex = 39
+        Me.Button12.UseVisualStyleBackColor = False
+        '
+        'Button13
+        '
+        Me.Button13.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Button13.Location = New System.Drawing.Point(894, 47)
+        Me.Button13.Name = "Button13"
+        Me.Button13.Size = New System.Drawing.Size(26, 25)
+        Me.Button13.TabIndex = 40
+        Me.Button13.UseVisualStyleBackColor = False
+        '
+        'Button14
+        '
+        Me.Button14.BackColor = System.Drawing.Color.Blue
+        Me.Button14.Location = New System.Drawing.Point(862, 47)
+        Me.Button14.Name = "Button14"
+        Me.Button14.Size = New System.Drawing.Size(26, 25)
+        Me.Button14.TabIndex = 41
+        Me.Button14.UseVisualStyleBackColor = False
+        '
+        'Button15
+        '
+        Me.Button15.Location = New System.Drawing.Point(113, 451)
+        Me.Button15.Name = "Button15"
+        Me.Button15.Size = New System.Drawing.Size(42, 45)
+        Me.Button15.TabIndex = 42
+        Me.Button15.Text = "Tri."
+        Me.Button15.UseVisualStyleBackColor = True
+        '
+        'Button16
+        '
+        Me.Button16.Location = New System.Drawing.Point(161, 451)
+        Me.Button16.Name = "Button16"
+        Me.Button16.Size = New System.Drawing.Size(42, 45)
+        Me.Button16.TabIndex = 43
+        Me.Button16.Text = "Octa."
+        Me.Button16.UseVisualStyleBackColor = True
+        '
+        'Button17
+        '
+        Me.Button17.Location = New System.Drawing.Point(113, 501)
+        Me.Button17.Name = "Button17"
+        Me.Button17.Size = New System.Drawing.Size(42, 45)
+        Me.Button17.TabIndex = 44
+        Me.Button17.Text = "Hexa"
+        Me.Button17.UseVisualStyleBackColor = True
+        '
+        'Button18
+        '
+        Me.Button18.Location = New System.Drawing.Point(161, 501)
+        Me.Button18.Name = "Button18"
+        Me.Button18.Size = New System.Drawing.Size(42, 45)
+        Me.Button18.TabIndex = 45
+        Me.Button18.Text = "Star"
+        Me.Button18.UseVisualStyleBackColor = True
+        '
         'ySpeedTrackbar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(999, 554)
+        Me.Controls.Add(Me.Button18)
+        Me.Controls.Add(Me.Button17)
+        Me.Controls.Add(Me.Button16)
+        Me.Controls.Add(Me.Button15)
+        Me.Controls.Add(Me.Button14)
+        Me.Controls.Add(Me.Button13)
+        Me.Controls.Add(Me.Button12)
+        Me.Controls.Add(Me.Button11)
+        Me.Controls.Add(Me.Button10)
+        Me.Controls.Add(Me.Button9)
         Me.Controls.Add(Me.CheckBox2)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.CheckBox1)
@@ -386,4 +496,14 @@ Partial Class ySpeedTrackbar
     Friend WithEvents CheckBox1 As CheckBox
     Friend WithEvents Label5 As Label
     Friend WithEvents CheckBox2 As CheckBox
+    Friend WithEvents Button9 As Button
+    Friend WithEvents Button10 As Button
+    Friend WithEvents Button11 As Button
+    Friend WithEvents Button12 As Button
+    Friend WithEvents Button13 As Button
+    Friend WithEvents Button14 As Button
+    Friend WithEvents Button15 As Button
+    Friend WithEvents Button16 As Button
+    Friend WithEvents Button17 As Button
+    Friend WithEvents Button18 As Button
 End Class

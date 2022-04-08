@@ -15,9 +15,9 @@
         If m_Previous IsNot Nothing Then
             Dim d As Object
 
-            d = New Line(PictureBox1.Image, m_Previous, e.Location)
-            d.Pen = New Pen(c, w)
-            d.xspeed = xSpeedTrackBar.Value
+            ' d = New Line(PictureBox1.Image, m_Previous, e.Location)
+            ' d.Pen = New Pen(c, w)
+            'd.xspeed = xSpeedTrackBar.Value
             ' d.yspeed = ySpeedTrackbar.Value
             If type = "Line" Then
                 d = New Line(PictureBox1.Image, m_Previous, e.Location)
@@ -148,6 +148,10 @@
     End Sub
 
     Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
+
+    End Sub
+
+    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
 
     End Sub
 End Class
