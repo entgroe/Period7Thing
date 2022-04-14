@@ -15,10 +15,11 @@
         If m_Previous IsNot Nothing Then
             Dim d As Object
 
-            ' d = New Line(PictureBox1.Image, m_Previous, e.Location)
-            ' d.Pen = New Pen(c, w)
-            'd.xspeed = xSpeedTrackBar.Value
-            ' d.yspeed = ySpeedTrackbar.Value
+
+            d = New Line(PictureBox1.Image, m_Previous, e.Location)
+            d.Pen = New Pen(c, w)
+            d.xspeed = xSpeedTrackBar.Value
+            'd.yspeed = ySpeedTrackbar.Value
             If type = "Line" Then
                 d = New Line(PictureBox1.Image, m_Previous, e.Location)
                 d.Pen = New Pen(c, w)
@@ -43,8 +44,8 @@
             If type = "polygon" Then
                 d = New polygon(PictureBox1.Image, m_Previous, e.Location)
                 d.Pen = New Pen(c, w)
-                d.w = TrackBar1.Value
-                d.w = TrackBar2.Value
+                ' d.w = TrackBar1.Value
+                'd.w = TrackBar2.Value
             End If
 
 

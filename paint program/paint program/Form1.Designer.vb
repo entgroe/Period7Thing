@@ -143,7 +143,7 @@ Partial Class ySpeedTrackbar
         '
         'TrackBar3
         '
-        Me.TrackBar3.Location = New System.Drawing.Point(693, 123)
+        Me.TrackBar3.Location = New System.Drawing.Point(697, 131)
         Me.TrackBar3.Name = "TrackBar3"
         Me.TrackBar3.Size = New System.Drawing.Size(104, 45)
         Me.TrackBar3.TabIndex = 16
@@ -178,8 +178,6 @@ Partial Class ySpeedTrackbar
         'TrackBar4
         '
         Me.TrackBar4.Location = New System.Drawing.Point(697, 182)
-        Me.TrackBar4.Maximum = 20
-        Me.TrackBar4.Minimum = 3
         Me.TrackBar4.Name = "TrackBar4"
         Me.TrackBar4.Size = New System.Drawing.Size(104, 45)
         Me.TrackBar4.TabIndex = 21
@@ -188,8 +186,6 @@ Partial Class ySpeedTrackbar
         'TrackBar5
         '
         Me.TrackBar5.Location = New System.Drawing.Point(697, 233)
-        Me.TrackBar5.Maximum = 200
-        Me.TrackBar5.Minimum = 10
         Me.TrackBar5.Name = "TrackBar5"
         Me.TrackBar5.Size = New System.Drawing.Size(104, 45)
         Me.TrackBar5.TabIndex = 22
